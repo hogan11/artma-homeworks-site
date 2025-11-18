@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Artma Homeworks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6;}
+    header {background: #2c3e50; color: white; padding: 60px 20px; text-align:center;}
+    section {padding: 40px 20px;}
+    .services {display:flex; flex-wrap:wrap; justify-content:space-around;}
+    .service {flex: 1 1 300px; margin:20px; padding:20px; border:1px solid #ddd; border-radius:8px;}
+    form {max-width:600px; margin:0 auto;}
+    label {display:block; margin-bottom:5px;}
+    input, textarea {width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:4px;}
+    button {background:#2c3e50; color:white; padding:10px 20px; border:none; border-radius:4px; cursor:pointer;}
+    button:hover {background:#34495e;}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Artma Homeworks</h1>
+  <p>Premium Renovation & Construction Services</p>
+</header>
+
+<section>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service">
+      <h3>Bathroom Refresh</h3>
+      <p>Upgrade your bathroom with modern fixtures, new lighting, and fresh finishes.</p>
+    </div>
+    <div class="service">
+      <h3>Kitchen Update</h3>
+      <p>Transform your kitchen with painted cabinets, updated hardware, and new surfaces.</p>
+    </div>
+    <div class="service">
+      <h3>Outdoor Spaces</h3>
+      <p>Create inviting outdoor living areas with decks, patios, and landscaping.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact Us</h2>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone">
+    <label for="project">Project Type</label>
+    <input type="text" id="project" name="project">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+</body>
+</html>
